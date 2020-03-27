@@ -80,8 +80,10 @@ img {
   src: url('../fonts/hkgrotesk-medium-webfont.woff2') format('woff2'), url('../fonts/hkgrotesk-medium-webfont.woff') format('woff');
 }
 
-h1,h2,h3 {
-    font-weight: 200;
+h1,
+h2,
+h3 {
+  font-weight: 200;
 }
 
 h1 {
@@ -215,12 +217,11 @@ a:focus {
     ---
     Creates a horizontal container that sets de global max-width
 */
-
 .o-container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 90em; /* 90 * 16px = 1440px */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 56.4em; /* 56.4 * 20px = 1128px */
 }
 
 /*
@@ -230,6 +231,22 @@ a:focus {
     contains the basic structural elements, but classes should be complemented
     with width utilities
 */
+
+.c-logo {
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.c-logo__symbol {
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .c-logo {
+        height: 40px;
+    }
+}
 
 .o-layout {
   display: -webkit-flex;
