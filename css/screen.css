@@ -190,6 +190,12 @@ a:focus {
   display: flow-root;
 }
 
+/* color modifier*/
+
+.o-row--neutral-x-light {
+  background-color: #f7f7fa;
+}
+
 /* size modifiers */
 
 .o-row--lg {
