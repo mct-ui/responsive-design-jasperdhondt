@@ -303,6 +303,39 @@ a:focus {
   flex-basis: 100%;
 }
 
+.c-header__nav {
+    display: none;
+}
+
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+    .c-header__logo,
+    .c-header__nav {
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+
+    .c-header__nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .c-header__nav--main {
+        flex-grow: 2;
+        justify-content: center;
+    }
+
+    .c-header__mobile-nav-trigger {
+        display: none;
+    }
+}
+
+
 /* gutter modifiers, these affect o-layout__item too */
 
 .o-layout--gutter {
